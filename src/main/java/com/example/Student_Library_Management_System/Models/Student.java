@@ -3,7 +3,7 @@ package com.example.Student_Library_Management_System.Models;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "student")
+@Table(name = "/student")
 public class Student {
 
     @Id
@@ -17,7 +17,7 @@ public class Student {
 
     private int age ;
 
-    private String monNo ;
+    private String mobNo ;
 
     private String country ;
 
@@ -26,6 +26,18 @@ public class Student {
     //Name of variable of the parent Entity that you have written in child class foreign key attributes
     @OneToOne(mappedBy = "studentVariableName",cascade = CascadeType.ALL)
      private Card card;
+
+    /*
+    Steps to find that variable
+        1. Go the child class (In this case)
+            2. Out of all the attributes select the foreign key attribute that is helping you connect
+    with parent class
+        (Ref :  @OneToOne
+    @JoinColumn
+    private Student studentVariableName;
+        )
+                3. Choose the variable name of the parentEnty (reference : studentVariableName)
+     */
 
     public Card getCard() {
         return card;
@@ -71,12 +83,12 @@ public class Student {
         this.age = age;
     }
 
-    public String getMonNo() {
-        return monNo;
+    public String getMobNo() {
+        return mobNo;
     }
 
-    public void setMonNo(String monNo) {
-        this.monNo = monNo;
+    public void setMobNo(String monNo) {
+        this.mobNo = mobNo;
     }
 
     public String getCountry() {

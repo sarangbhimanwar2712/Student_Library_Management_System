@@ -30,6 +30,7 @@ public class Author {
     public Author() {
     }
 
+
     public int getId() {
         return id;
     }
