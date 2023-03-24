@@ -10,5 +10,5 @@ In addition to resource management, the backend also handles user management. It
 Overall, a student library management backend application plays an important role in ensuring that library resources are well-organized and easily accessible to students and faculty. By providing a centralized system for managing library materials and user accounts, the application helps to streamline library operations and enhance the overall user experience.
 
 
-#Database schema
+# Database schema
 ![image](https://user-images.githubusercontent.com/117634221/227411720-75c08fa3-153a-4206-8e92-cfb011909182.png)
